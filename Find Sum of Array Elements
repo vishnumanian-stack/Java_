@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class SumOfArray {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Read number of elements
+        int N = scanner.nextInt();
+
+        int[] arr = new int[N];
+        int sum = 0;
+
+        // Read array elements
+        for (int i = 0; i < N; i++) {
+            arr[i] = scanner.nextInt();
+            sum += arr[i];
+        }
+
+        // Print the sum
+        System.out.println(sum);
+
+        scanner.close();
+    }
+}
