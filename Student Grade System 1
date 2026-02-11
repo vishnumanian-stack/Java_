@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class GradeCalculator {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int M = sc.nextInt();
+
+        if (M >= 90) {
+            System.out.println("A");
+        } else if (M >= 75) {
+            System.out.println("B");
+        } else if (M >= 60) {
+            System.out.println("C");
+        } else {
+            System.out.println("Fail");
+        }
+
+        sc.close();
+    }
+}
