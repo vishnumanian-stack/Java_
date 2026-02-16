@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class CopyArrayExample {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -16,5 +15,6 @@ public class CopyArrayExample {
         for (int i = 0; i < N; i++) {
             System.out.print(copiedArray[i] + " ");
         }
-
+        
+    }
 }
