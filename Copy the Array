@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class CopyArrayExample {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        int[] originalArray = new int[N];
+        for (int i = 0; i < N; i++) {
+            originalArray[i] = sc.nextInt();
+        }
+        int[] copiedArray = new int[N];
+        for (int i = 0; i < N; i++) {
+            copiedArray[i] = originalArray[i];
+        }
+
+        for (int i = 0; i < N; i++) {
+            System.out.print(copiedArray[i] + " ");
+        }
+
+}
