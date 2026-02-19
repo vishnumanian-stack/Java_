@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class Vehicle {
+    String brand;
+    void showBrand() {
+        System.out.println("Brand:" + brand);
+    }
+}
+class Car extends Vehicle {
+    int speed;
+    void showSpeed() {
+        System.out.println("Speed:" + speed);
+    }
+}
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Car car = new Car();
+        car.brand = sc.nextLine();
+        car.speed = sc.nextInt();
+        car.showBrand();
+        car.showSpeed();
+    }
+}
